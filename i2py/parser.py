@@ -357,7 +357,8 @@ method_name
 
 def p_error(p):
    "Error function used by the parser"
-   import pdb; pdb.set_trace()
+
+   # import pdb; pdb.set_trace()
    error.syntax_error('invalid syntax at %s' % repr(str(p.value)), p.lineno)
 
 
