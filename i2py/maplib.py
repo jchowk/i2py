@@ -84,7 +84,7 @@ map_pro('ON_IOERROR', inpars=[1],
 map_pro('CATCH', inpars=[1], inkeys=['CANCEL'],
         callfunc=lambda i,o: '# CATCH, %s' % i)
 map_pro('PRINT', inpars=range(1,101), noptional=100, inkeys=['FORMAT'],
-        callfunc=(lambda i,o: 'print ' + ', '.join(i)))
+        callfunc=(lambda i,o: 'print( ' + ', '.join(i)+ ', )'))
 
 
 ################################################################################
