@@ -296,7 +296,6 @@ class TranslationUnit(Node):
 
 
       parts.append('from %s import *' % config.arraymodule)
-      parts.append('from __future__ import print_function')
       # import ipdb; ipdb.set_trace()
 
       try:
